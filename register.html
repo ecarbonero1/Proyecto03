@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrate</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <h1>Registrate</h1>
+    <form action="./index.html">
+
+        <div class="grupo">
+            <label for="Nombre">Nombre:</label>
+            <input type="text" name="Nombre" id="Nombre">
+
+            <br> <label for="Email">Email:</label>
+            <input type="email" name="Email" id="Email">
+
+            <br> <label for="Genero">Genero:</label>
+            <input type="radio" name="Genero" id="Masculino">
+            <label for="Masculino">Masculino</label>
+            <input type="radio" name="Genero" id="Femenino">
+            <label for="Femenino">Femenino</label>
+            <input type="radio" name="Genero" id="Otro">
+            <label for="Otro">Otro</label>
+
+            <br> <label for="Ocupación">Ocupación:</label>
+            <select name="Ocupación" id="Ocupación">
+                <option value="">Elegi una opcion:</option>
+                <option value="Estudiante">Estudiante</option>
+                <option value="Docente">Docente</option>
+                <option value="Empleado/a">Empleado/a</option>
+                <option value="Desocupado/a">Desocupado/a</option>
+                <option value="Jubilado">Jubilado</option>
+            </select>
+
+            <br> <label for="Contraseña">Contraseña:</label>
+            <input type="password" name="Contraseña" id="Contraseña">
+        </div>
+
+        <div class="grupo">
+            <label for="sobreVos">Contanos sobre vos:</label> <br>
+            <textarea name="Contanos sobre vos" id="sobreVos"></textarea>
+        </div>
+
+        <div>
+            <label for="Terminos y Condiciones">Terminos y Condiciones</label> <br>
+            <input type="checkbox" name="TyC" id="Compromiso">
+            <label for="Compromiso">El usuario se compromete a usar la página de forma correcta y lícita.</label>
+
+            <br> <input type="checkbox" name="TyC" id="Derecho">
+            <label for="Derecho">Nos reservamos el derecho de bloquear el acceso a cualquier usuario que incumpla estas
+                normas.</label>
+        </div>
+
+        <div class="boton">
+            <button type="submit">Enviar</button>
+            <button type="reset">Resetear</button>
+        </div>
+
+    </form>
+</body>
+
+</html>

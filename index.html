@@ -1,33 +1,33 @@
 <!doctype html>
 <html lang="en">
   <head>
-     <link rel="stylesheet" href="../Proyecto03/css/style.css">
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sharp Store</title>
+     <link rel="stylesheet" href="../Proyecto03/css/styles.css">
   </head>
 
   <body>
     <header>
-        <h1>Sharp Store</h1>
-      <a href="index.html"><img class="logo" src="./img/logoben.png" alt="logo" /></a>
-      <nav>
-        <ul>
+      <a href="index.html"><img class="logo" src="./img/logoben.png" alt="logo"></a>
+        <form class="buscador" action="buscador.html">
+        <input type="text" placeholder="Buscar">
+        <button type="submit">Buscar</button>
+      </form>
+      <nav class="navprincipal">
+        <ul class="ulprincipal">
           <li><a href="index.html">Home</a></li>
           <li><a href="login.html">Login</a></li>
           <li><a href="register.html">Registro</a></li>
         </ul>
       </nav>
-      <form class="buscador" action="buscador.html">
-        <input type="text" placeholder="Buscar" />
-        <button type="submit">Buscar</button>
-      </form>
+   
     </header>
     <main>
       <aside class="menu-categorias">
-        <h4> Categorias de Productos</h4>
-        <nav>
-          <ul>
+        <h2> Categorias de Productos</h4>
+        <nav class="navcategorias">
+          <ul class="categoria-ul">
             <li><a href="categoria.html">beauty</a></li>
             <li><a href="categoria.html">fragrances</a></li>
             <li><a href="categoria.html">furniture</a></li>
@@ -55,7 +55,28 @@
           </ul>
         </nav>
       </aside>
-      <div class="productos"></div>
+      <div class="productos">
+        <section class="masvendidos"> 
+          <h2>Mas Vendidos</h2> 
+          <article class="artproductos">
+            <img class="imgproductos" src="./img/iphone18promax.avif" alt="iphone18promax">
+            <h3>Apple iPhone 18 Pro Max</h3>
+            <p>6,9" chip A20 Pro - Azul glacial 256 GB</p>
+            <p>1.619 €</p>
+            <a href="producto.html">Ver Más</a>
+          </article>
+        </section>
+        <section>
+          <h2>Productos</h2>
+          <article class="artproductos">
+            <img class="imgproductos" src="./img/iphone18promax.avif" alt="iphone18promax">
+            <h3>Apple iPhone 18 Pro Max</h3>
+            <p>6,9" chip A20 Pro - Azul glacial 256 GB</p>
+            <p>1.619 €</p>
+            <a href="producto.html">Ver Más</a>
+          </article>
+        </section>
+      </div>
     </main>
     <footer>
     <p> 2026 Catálogo de Productos Oficial de Sharp</p>

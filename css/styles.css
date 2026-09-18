@@ -27,11 +27,11 @@ body{
 }
 
 .imagen-grupo{
-  flex: 1;
+  order:1;
 }
 
 .columna-texto{
-  flex: 2;
+ order: 2;
   text-align: justify;
 }
 

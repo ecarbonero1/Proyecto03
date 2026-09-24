@@ -44,6 +44,9 @@ img.logo{
   height: 69px;
   align-self: center;
 }
+header a{
+  margin-left: 15px;
+}
 .ulprincipal{
   display: flex;
   flex-direction: row;
@@ -126,6 +129,7 @@ footer{
 }
 .catgh2{
   margin-top: 15px;
+  margin-left: 15px;
 }
 .artproductos a{
   display: block;
@@ -182,4 +186,15 @@ footer{
   border-bottom: 1px solid #eee;
   color: #666;
 }
-
+.inicio{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.registro{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}

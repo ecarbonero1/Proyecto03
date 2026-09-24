@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,11 +9,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
+    <header>
+      <a href="./index.html"><img class="logo" src="./img/logoben.png" alt="logo"></a>
+      <nav class="navprincipal">
+        <ul class="ulprincipal">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./login.html">Login</a></li>
+          <li><a href="./register.html">Registro</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="registro">
     <h1>Registrate</h1>
     <form action="./index.html">
-
         <div class="grupo">
             <label for="Nombre">Nombre:</label>
             <input type="text" name="Nombre" id="Nombre">
@@ -43,12 +51,10 @@
             <br> <label for="Contraseña">Contraseña:</label>
             <input type="password" name="Contraseña" id="Contraseña">
         </div>
-
         <div class="grupo">
             <label for="sobreVos">Contanos sobre vos:</label> <br>
             <textarea name="Contanos sobre vos" id="sobreVos"></textarea>
         </div>
-
         <div>
             <label for="Terminos y Condiciones">Terminos y Condiciones</label> <br>
             <input type="checkbox" name="TyC" id="Compromiso">
@@ -58,13 +64,12 @@
             <label for="Derecho">Nos reservamos el derecho de bloquear el acceso a cualquier usuario que incumpla estas
                 normas.</label>
         </div>
-
         <div class="boton">
             <button type="submit">Enviar</button>
             <button type="reset">Resetear</button>
         </div>
-
     </form>
+    </section>
 </body>
 
 </html>

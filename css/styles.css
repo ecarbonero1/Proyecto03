@@ -18,16 +18,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
 }
-.historia{
-  margin: 0;
-  padding: 0;
-  background-color: #ffffff;
-  color: #333333;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
+
 
 header{
   display: flex;
@@ -191,7 +182,23 @@ footer{
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+  width:100%;
+  padding: 70px;
 }
+.h1inicio{
+  font-family: 'Times New Roman', Times, serif;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+}
+.boton-login button {
+  border-radius: 5px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
 .registro{
   display: flex;
   flex-direction: column;

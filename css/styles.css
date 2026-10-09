@@ -130,14 +130,10 @@ footer{
   height: 20px;
 }
 
-.imgproductosa {
-  width: 60vh;
-  height: 50vh;
-}
 .producto-detalle {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
+ display: flex;
+ flex-direction: row;
+ flex-wrap: nowrap;
   margin-bottom: 50px;
   background: white;
   padding: 30px;
@@ -196,9 +192,7 @@ input {
 .boton-login button {
   border-radius: 5px;
   font-size: 15px;
-  text-transform: uppercase;
 }
-
 .registro{
   display: flex;
   flex-direction: column;

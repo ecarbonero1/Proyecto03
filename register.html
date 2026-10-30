@@ -22,21 +22,21 @@
     </header>
     <section class="registro">
     <h1 class="h1inicio">Registrate</h1>
-    <form action="./index.html">
+    <form action="./index.html" method="get">
         <div class="grupo">
             <label for="Nombre">Nombre:</label>
             <input type="text" name="Nombre" id="Nombre">
 
             <br> <label for="Email">Email:</label>
-            <input type="email" name="Email" id="Email">
+            <input type="email" name="Email" id="Email" value="">
             <br> <label for="Genero">Genero:</label>
             <div class="generos">
             <label for="Masculino">Masculino</label>
-            <input type="radio" name="Genero" id="Masculino">
+            <input type="radio" name="Genero" id="Masculino" value="">
             <label for="Femenino">Femenino</label>
-            <input type="radio" name="Genero" id="Femenino">
+            <input type="radio" name="Genero" id="Femenino" value="">
             <label for="Otro">Otro</label>
-            <input type="radio" name="Genero" id="Otro">
+            <input type="radio" name="Genero" id="Otro" value="">
             </div>
             <br> <label for="Ocupación">Ocupación:</label>
             <select name="Ocupación" id="Ocupación">
@@ -47,9 +47,10 @@
                 <option value="Desocupado/a">Desocupado/a</option>
                 <option value="Jubilado">Jubilado</option>
             </select>
+            /*SACAR OCUPACION, LO VEMOS MAS ADELANTE */
 
             <br> <label for="Contraseña">Contraseña:</label>
-            <input type="password" name="Contraseña" id="Contraseña">
+            <input type="password" name="Contraseña" id="Contraseña" value="">
         </div>
         <div class="grupo">
             <label for="sobreVos">Contanos sobre vos:</label> <br>
@@ -57,10 +58,10 @@
         </div>
         <div>
             <label for="Terminos y Condiciones">Terminos y Condiciones</label> <br>
-            <input type="checkbox" name="TyC" id="Compromiso">
+            <input type="checkbox" name="TyC" id="Compromiso" value="">
             <label for="Compromiso">El usuario se compromete a usar la página de forma correcta y lícita.</label>
 
-            <br> <input type="checkbox" name="TyC" id="Derecho">
+            <br> <input type="checkbox" name="TyC" id="Derecho" value="">
             <label for="Derecho">Nos reservamos el derecho de bloquear el acceso a cualquier usuario que incumpla estas
                 normas.</label>
         </div>

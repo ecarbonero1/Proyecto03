@@ -72,8 +72,10 @@ a{
   align-self: center;
 }
 .buscador{
-  align-self: center;
+  display: flex;
+  align-items: center;
 }
+
 main{
   display: flex;
   flex-direction: row;
@@ -188,6 +190,7 @@ input {
   width: 100%;
   padding: 10px;
   border-radius: 5px;
+  flex: 1;
 }
 .boton-login button {
   border-radius: 5px;
@@ -205,3 +208,64 @@ input {
 }
 
 /*PONER RESPONSIVE */
+@media (max-width: 768px) {
+
+  header {
+    height: auto;
+    padding: 10px 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navprincipal {
+    width: 100%;
+  }
+
+  .ulprincipal {
+    justify-content: center;
+  }
+
+  .ulprincipal a {
+    margin: 5px 10px;
+  }
+
+  .buscador {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  aside {
+    width: 100%;
+    border-bottom: 1px solid black;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+  }
+
+  .categoria-ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+  }
+
+  .categoria-ul li {
+    background-color: white;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+
+  .productos {
+    width: 100%;
+    border-left: none;
+    border-top: 1px solid black;
+  }
+
+  .prodh2 .catgh2 {
+    margin-left: 15px;
+    text-align: center;
+  }
+}

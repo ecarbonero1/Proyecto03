@@ -17,7 +17,6 @@ fetch('https://dummyjson.com/products/categories')
   console.log("Error: " + error);
 })
 
-// ---- PRODUCTOS ----
 fetch('https://dummyjson.com/products')
 .then(function(response) {
   return response.json()

@@ -12,6 +12,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  min-height: 100vh;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -200,6 +201,7 @@ input {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
 }
 .generos{

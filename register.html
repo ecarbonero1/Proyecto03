@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,62 +8,61 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@600;700;800&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header>
-      <a href="./index.html"><img class="logo" src="./img/logoben.png" alt="logo"></a>
-      <nav class="navprincipal">
-        <ul class="ulprincipal">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./login.html">Login</a></li>
-          <li><a href="./register.html">Registro</a></li>
-        </ul>
-      </nav>
+        <a href="./index.html"><img class="logo" src="./img/logoben.png" alt="logo"></a>
+        <nav class="navprincipal">
+            <ul class="ulprincipal">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./register.html">Registro</a></li>
+            </ul>
+        </nav>
     </header>
     <section class="registro">
-    <h1 class="h1inicio">Registrate</h1>
-    <form action="./index.html" method="get">
-        <div class="grupo">
-            <label for="Nombre">Nombre:</label>
-            <input type="text" name="Nombre" id="Nombre">
+        <h1 class="h1inicio">Registrate</h1>
+        <form action="./index.html" method="get" class="formRegistro">
+            <div class="grupo">
 
-            <br> <label for="Email">Email:</label>
-            <input type="email" name="Email" id="Email" value="">
-            <br> <label for="Genero">Genero:</label>
-            <div class="generos">
-            <label for="Masculino">Masculino</label>
-            <input type="radio" name="Genero" id="Masculino" value="">
-            <label for="Femenino">Femenino</label>
-            <input type="radio" name="Genero" id="Femenino" value="">
-            <label for="Otro">Otro</label>
-            <input type="radio" name="Genero" id="Otro" value="">
+                <br>
+                <label for="Email">Email:</label>
+                <input type="email" name="Email" id="Email" value="">
+                <p class="errorEmail"></p>
+
+                <br>
+                <label for="Contraseña">Contraseña:</label>
+                <input type="password" name="Contraseña" id="Contraseña" value="">
+                <p class="errorPassword"></p>
+
+                <br>
+                <label for="repetirContraseña">Repetir contraseña:</label>
+                <input type="samepassword" name="repetirContraseña" id="repetirContraseña" value="">
+                <p class="errorRepeat"></p>
+
             </div>
-          
 
-            <br> <label for="Contraseña">Contraseña:</label>
-            <input type="password" name="Contraseña" id="Contraseña" value="">
-        </div>
-        <div class="grupo">
-            <label for="sobreVos">Contanos sobre vos:</label> <br>
-            <textarea name="Contanos sobre vos" id="sobreVos"></textarea>
-        </div>
-        <div>
-            <label for="Terminos y Condiciones">Terminos y Condiciones</label> <br>
-            <input type="checkbox" name="TyC" id="Compromiso" value="">
-            <label for="Compromiso">El usuario se compromete a usar la página de forma correcta y lícita.</label>
+            <div>
+                <br>
+                <input type="checkbox" name="TyC" id="TyC" value="">
+                <label for="TyC">Acepto terminos y condiciones</label>
+            </div>
 
-            <br> <input type="checkbox" name="TyC" id="Derecho" value="">
-            <label for="Derecho">Nos reservamos el derecho de bloquear el acceso a cualquier usuario que incumpla estas
-                normas.</label>
-        </div>
-        <div class="boton">
-            <button type="submit">Enviar</button>
-            <button type="reset">Resetear</button>
-        </div>
-    </form>
+            <div class="boton">
+                <button type="submit">Registrarme</button>
+            </div>
+
+            <div class="boton">
+                <button type="submit"><a href="./login.html">Ya tengo una cuenta</a></button>
+            </div>
+        </form>
     </section>
 
     <script src="./js/register.js"></script>
 </body>
+
 </html>
